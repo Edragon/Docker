@@ -1,5 +1,4 @@
-
-1. Build it 
+1. Build it, -t tag test    
 docker build -t test .
 
 2. Run it  

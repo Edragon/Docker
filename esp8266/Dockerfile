@@ -19,3 +19,6 @@ RUN git clone  https://github.com/espressif/ESP8266_RTOS_SDK.git
 # export path
 RUN export PATH="$PATH:/xtensa-lx106-elf/bin"
 RUN export IDF_PATH=/ESP8266_RTOS_SDK
+
+# install python requirements
+RUN cd /ESP* && python2.7 -m pip install --user -r requirements.txt

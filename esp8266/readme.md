@@ -6,6 +6,8 @@ docker run -it --name "test" test:latest bash
 
 
 3. Enter into docker test and may still need to run following commands  
+ cd /ESP*  
+ python2.7 -m pip install --user -r requirements.txt  
  export IDF_PATH=/ESP8266_RTOS_SDK  
  export PATH="$PATH:/xtensa-lx106-elf/bin"  
 

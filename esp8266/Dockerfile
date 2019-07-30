@@ -1,16 +1,6 @@
-FROM python:2.7-stretch # debian stretch
-
-RUN apt-get update && apt-get install -y \
-    git \
-    wget \
-    make \
-    grep \
-    g++ \
-  && apt-get clean
-
-
 # Docker file
-FROM python:2.7-stretch # debian + python 2.7
+# this suppose to be python 2.7 + debian stretch?
+FROM python:2.7-stretch
 RUN apt-get update
 RUN apt-get install gcc git wget make libncurses-dev flex bison gperf python python-serial -y
 RUN apt-get clean
